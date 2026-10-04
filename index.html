@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monte Alto Electronics | Bicicletas eléctricas Evobike y Mobulaa en Bogotá</title>
+<meta name="description" content="Bicicletas eléctricas Evobike y Mobulaa de ensamble nacional, con repuestos garantizados, seguro contra robo y daño y posventa en Bogotá.">
+<meta property="og:title" content="Monte Alto Electronics">
+<meta property="og:description" content="Movilidad que te impulsa hacia lo alto.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--mo:#7209B7;--ne:#0B0B0B;--az-o:#0D1B2A;--az:#0077B6;--li:#C487FF;--bl:#FAF9FC;--gr:#B5B1BF;--sf:#16121D}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:'Montserrat',Arial,Helvetica,sans-serif;background:var(--ne);color:var(--bl);line-height:1.6}
+a{color:inherit}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--li);outline-offset:2px}
+.w{max-width:1120px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--mo)}
+.alt{background:var(--az-o)}
+h1,h2,h3{line-height:1.15;font-weight:800}
+h1{font-size:clamp(2.2rem,6vw,3.8rem)}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:10px}
+h3{font-size:1.1rem;font-weight:700}
+.sub{color:var(--li);font-weight:600;margin-bottom:28px;max-width:640px}
+p{color:var(--gr)}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.95rem;border:2px solid var(--mo);background:var(--mo);color:#fff;cursor:pointer;font-family:inherit}
+.btn:hover{background:#8a1fd4}
+.btn.o{background:transparent;border-color:var(--az);color:#fff}
+.btn.s{padding:9px 16px;font-size:.85rem}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--sf);border:1px solid var(--mo);border-radius:28px;padding:24px}
+.card h3{color:#fff;margin-bottom:6px}
+.pill{display:inline-block;background:var(--mo);color:#fff;font-size:.75rem;font-weight:700;padding:3px 12px;border-radius:999px;margin:0 6px 6px 0}
+.pill.b{background:var(--az)}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:var(--ne);border-bottom:1px solid var(--mo)}
+nav .w{display:flex;align-items:center;gap:18px;height:62px}
+.logo{background:var(--bl);border-radius:999px;padding:4px 14px;display:flex;align-items:center;height:42px;text-decoration:none;color:#26104d;font-weight:800;font-size:.85rem;letter-spacing:.02em}
+.logo img{height:30px}
+.links{display:flex;gap:16px;margin-left:auto;font-size:.85rem;font-weight:600}
+.links a{text-decoration:none;color:var(--gr)}.links a:hover{color:#fff}
+#mb{display:none;margin-left:auto;background:none;border:1px solid var(--mo);color:#fff;border-radius:8px;padding:6px 12px;font-size:1.1rem}
+/* hero */
+.hero{background:radial-gradient(900px 400px at 85% 0,#3a0a63 0,transparent 70%),var(--ne);border-top:0}
+.hero .w{display:grid;gap:36px;grid-template-columns:1.1fr .9fr;align-items:center}
+.tag{color:var(--li);font-weight:700;font-size:.85rem;margin-bottom:14px}
+.hero p.l{font-size:1.1rem;margin:18px 0 26px;max-width:520px}
+.chips{margin-top:22px}
+.ph{background:var(--sf);border:1px dashed var(--li);color:var(--li);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.8rem;padding:10px;border-radius:20px;aspect-ratio:4/3;width:100%}
+.hero img,.hero .ph{border-radius:28px;aspect-ratio:4/3;object-fit:cover}
+/* tabla */
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:560px}
+th,td{padding:14px;text-align:left;border-bottom:1px solid #2a2338;font-size:.92rem}
+th{color:var(--li)}
+td:last-child,th:last-child{background:rgba(114,9,183,.22);color:#fff}
+/* catalogo */
+.f{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}
+.f button{background:none;border:1px solid var(--mo);color:#fff;border-radius:999px;padding:8px 18px;font-weight:600;cursor:pointer;font-family:inherit}
+.f button[aria-pressed=true]{background:var(--mo)}
+.prod{padding:0;overflow:hidden}
+.prod img,.prod .ph{aspect-ratio:4/3;object-fit:cover;border-radius:0;border:0;border-bottom:1px solid var(--mo);transition:transform .3s}
+.prod .im{overflow:hidden}.prod:hover img{transform:scale(1.04)}
+.prod .b{padding:20px}
+.prod ul{list-style:none;padding:0;margin:8px 0 14px;font-size:.88rem;color:var(--gr)}
+.price{font-size:.85rem;color:var(--li);font-weight:600;margin-bottom:12px}
+/* normativa */
+.big{font-size:2.2rem;font-weight:800;color:var(--li)}
+/* sedes */
+.sede.main{border-color:var(--li);border-width:2px}
+.sede p{margin:4px 0}
+.on{font-weight:700;font-size:.85rem}
+.on.si{color:#5be39a}.on.no{color:#ff8a8a}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+/* faq */
+details{background:var(--sf);border:1px solid var(--mo);border-radius:18px;padding:16px 20px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;color:#fff}
+details p{margin-top:10px}
+/* form */
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:600;font-size:.9rem;color:#fff;display:grid;gap:6px}
+input,select{background:var(--sf);border:1px solid var(--mo);color:#fff;border-radius:12px;padding:12px;font:inherit}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;color:var(--gr)}
+.chk input{margin-top:5px}
+footer{background:var(--ne);padding:40px 0;border-top:1px solid var(--mo);font-size:.9rem}
+footer .grid{margin-bottom:20px}
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#04210f;font-weight:800;border-radius:999px;padding:14px 20px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.5)}
+@media(max-width:820px){.hero .w{grid-template-columns:1fr}.links{display:none;position:absolute;top:62px;left:0;right:0;background:var(--ne);flex-direction:column;padding:16px 20px;border-bottom:1px solid var(--mo)}.links.open{display:flex}#mb{display:block}nav .btn{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="w">
+<a class="logo" href="#inicio" aria-label="Monte Alto Electronics, inicio"><!-- Logo: img/Logo.png --><img src="img/Logo.png" alt="Monte Alto Electronics" onerror="this.replaceWith(document.createTextNode('MONTE ALTO'))"></a>
+<div class="links" id="links">
+<a href="#modelos">Modelos</a><a href="#por-que">Por qué Monte Alto</a><a href="#seguro">Seguro</a><a href="#normativa">Normativa</a><a href="#sedes">Sedes</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+</div>
+<a class="btn s" data-wa="general" href="#">Cotizar por WhatsApp</a>
+<button id="mb" aria-label="Abrir menú" aria-expanded="false">☰</button>
+</div>
+</nav>
+
+<header class="hero" id="inicio"><section class="hero" style="padding:64px 0 72px"><div class="w">
+<div>
+<p class="tag">Bicicletas eléctricas Evobike y Mobulaa</p>
+<h1>Movilidad que te impulsa hacia lo alto.</h1>
+<p class="l">Bicicletas eléctricas de ensamble nacional, con repuestos garantizados, seguro contra robo y daño, y soporte posventa de verdad.</p>
+<a class="btn" data-wa="general" href="#">Cotizar por WhatsApp</a> <a class="btn o" href="#modelos">Ver modelos</a>
+<div class="chips"><span class="pill">Ensamble nacional</span><span class="pill">Seguro contra robo y daño</span><span class="pill b">Cumple norma VELMPU</span><span class="pill b">Financia con Addi, Sistecrédito o Vanti</span></div>
+</div>
+<div><img src="img/Aguila%20Pro%20MAX.png" alt="Evobike Águila Pro Max" onerror="ph(this)"></div>
+</div></section></header>
+
+<section id="problema"><div class="w">
+<h2>El crecimiento de la categoría trae problemas de posventa</h2>
+<p class="sub">Comprar una bici eléctrica no debería darte miedo. Esto es lo que te preocupa y lo que hacemos al respecto.</p>
+<div class="grid">
+<div class="card"><h3>Repuestos</h3><p>Baja disponibilidad de repuestos originales.</p></div>
+<div class="card"><h3>Mantenimiento</h3><p>Costos altos y tiempos de espera.</p></div>
+<div class="card"><h3>Soporte</h3><p>Infraestructura técnica especializada insuficiente.</p></div>
+<div class="card"><h3>Seguros</h3><p>Complicaciones para gestionar indemnizaciones.</p></div>
+</div>
+<p class="sub" style="margin:26px 0 0">Monte Alto responde con respaldo, curaduría y servicio posventa.</p>
+</div></section>
+
+<section id="por-que" class="alt"><div class="w">
+<h2>Por qué comprar en Monte Alto</h2>
+<p class="sub">La experiencia no termina en la venta.</p>
+<div class="grid" style="margin-bottom:34px">
+<div class="card"><h3>Repuestos asegurados</h3><p>Marcas con ensambladora nacional, repuestos y baterías originales.</p></div>
+<div class="card"><h3>Protección integral</h3><p>Seguro contra robo y daño que contratas en el momento de la compra.</p></div>
+<div class="card"><h3>Posventa sin dolores de cabeza</h3><p>Gestionamos tus citas, garantías y repuestos con la red de talleres autorizados.</p></div>
+</div>
+<div class="tw"><table>
+<tr><th>Qué compras</th><th>Importación informal o retail</th><th>Monte Alto Electronics</th></tr>
+<tr><td>Enfoque</td><td>Solo venta, sin acompañamiento</td><td>Venta, posventa y asesoría continuada</td></tr>
+<tr><td>Respaldo técnico</td><td>Tercerizado y con demoras</td><td>Red de talleres autorizados de la marca</td></tr>
+<tr><td>Normativa</td><td>Sin verificar límites técnicos</td><td>Curaduría y certificación VELMPU</td></tr>
+<tr><td>Repuestos</td><td>Stock limitado e importado</td><td>Originales y garantizados</td></tr>
+<tr><td>Impacto</td><td>Sin vínculo con la comunidad</td><td>Inclusión intergeneracional y movilidad sostenible</td></tr>
+</table></div>
+</div></section>
+
+<section id="modelos"><div class="w">
+<h2>Bicicletas eléctricas</h2>
+<p class="sub">Distribuidor autorizado de Evobike y Mobulaa. Consulta precio y cuotas por WhatsApp.</p>
+<div class="f" role="group" aria-label="Filtrar por marca">
+<button data-f="todas" aria-pressed="true">Todas</button><button data-f="Evobike" aria-pressed="false">Evobike</button><button data-f="Mobulaa" aria-pressed="false">Mobulaa</button>
+</div>
+<div class="grid" id="cat"></div>
+</div></section>
+
+<section id="seguro" class="alt"><div class="w">
+<h2>Seguro contra robo y daño</h2>
+<p class="sub">Protege tu inversión. Cubrimos bicicletas eléctricas y también patinetas eléctricas.</p>
+<div class="grid" style="margin-bottom:26px">
+<div class="card"><h3>1. Eliges tu bicicleta</h3><p>Con asesoría honesta y sin afanes.</p></div>
+<div class="card"><h3>2. Agregas la póliza</h3><p>Se contrata en el mismo momento de la compra.</p></div>
+<div class="card"><h3>3. Te acompañamos</h3><p>Te ayudamos con el trámite de la reclamación.</p></div>
+</div>
+<a class="btn" data-wa="general" data-msg="Hola Monte Alto, quiero cotizar un seguro contra robo y daño." href="#">Cotizar mi seguro</a>
+</div></section>
+
+<section id="normativa"><div class="w">
+<h2>La normativa VELMPU, explicada fácil</h2>
+<p class="sub">Revisamos que cada bicicleta que vendes cumpla la norma.</p>
+<div class="grid" style="margin-bottom:22px">
+<div class="card"><div class="big">≤ 1.000 W</div><p>de potencia</p></div>
+<div class="card"><div class="big">≤ 40 km/h</div><p>de velocidad</p></div>
+<div class="card"><div class="big">1 plaza</div><p>una sola persona</p></div>
+</div>
+<p style="max-width:720px">Si un vehículo supera estos límites se clasifica como ciclomotor: exige matrícula, SOAT y licencia, y no puede circular por ciclorrutas.</p>
+<p style="margin-top:26px;color:#fff"><strong>Financiación:</strong> paga en cuotas pequeñas con Addi, Sistecrédito, Vanti o Banco de Bogotá. Te ayudamos con el trámite por WhatsApp.</p>
+</div></section>
+
+<section id="nosotros" class="alt"><div class="w">
+<h2>Una empresa familiar</h2>
+<p class="sub">Detrás de cada vehículo eléctrico hay una historia de superación.</p>
+<p style="max-width:700px;margin-bottom:26px">Monte Alto nace en 2025 como un proyecto de la familia Ruiz Sánchez. La experiencia de los padres y el impulso de las nuevas generaciones se unen para darte asesoría honesta y cercana.</p>
+<div class="grid">
+<div class="card"><h3>Emmanuel Daniel Ruiz Sánchez</h3><p>Director general</p></div>
+<div class="card"><h3>Yhoah Libeth Ruiz Sánchez</h3><p>Directora comercial</p></div>
+<div class="card"><h3>Miguel Ángel Ruiz Medina</h3><p>Director financiero</p></div>
+<div class="card"><h3>Nubia Sofía Sánchez Leiva</h3><p>Directora administrativa</p></div>
+</div>
+<p class="sub" style="margin:26px 0 0">Experiencia + juventud + propósito = inclusión intergeneracional.</p>
+</div></section>
+
+<section id="sedes"><div class="w">
+<h2>Visítanos en Bogotá</h2>
+<p class="sub">Ven a ver las bicicletas y a probarlas.</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="card sede main" data-sede="sanAndresito">
+<span class="pill">Sede principal</span>
+<h3>San Andresito de la 38</h3>
+<p>Calle 8 #37A-09, Local 138, Bogotá</p>
+<p>Lunes a sábado: 9:00 a.m. a 7:00 p.m.<br>Domingos y festivos: 10:00 a.m. a 2:00 p.m.</p>
+<p class="on" data-on></p>
+<p><!-- EDITAR: teléfono en CONFIG -->Tel: <span data-tel></span></p>
+<div class="acts"><a class="btn s" data-wa="sanAndresito" href="#">WhatsApp</a><a class="btn s o" data-call href="#">Llamar</a><a class="btn s o" data-map href="#" target="_blank" rel="noopener">Cómo llegar</a></div>
+</div>
+<div class="card sede" data-sede="tintal">
+<h3>Centro Comercial Tintal</h3>
+<p>Isla frente a Dollar City, Bogotá</p>
+<p>Todos los días y festivos: 10:00 a.m. a 7:00 p.m.</p>
+<p class="on" data-on></p>
+<p>Tel: <span data-tel></span></p>
+<div class="acts"><a class="btn s" data-wa="tintal" href="#">WhatsApp</a><a class="btn s o" data-call href="#">Llamar</a><a class="btn s o" data-map href="#" target="_blank" rel="noopener">Cómo llegar</a></div>
+</div>
+</div></section>
+
+<section id="faq" class="alt"><div class="w">
+<h2>Preguntas frecuentes</h2><div style="height:14px"></div>
+<details><summary>¿Y si necesito repuestos?</summary><p>Trabajamos con marcas de ensamble nacional, por eso los repuestos y baterías originales están disponibles.</p></details>
+<details><summary>¿Cómo funciona el seguro?</summary><p>Lo agregas al comprar. Cubre robo y daño de bicicletas y patinetas eléctricas, y te acompañamos en la reclamación.</p></details>
+<details><summary>¿Qué es VELMPU?</summary><p>Es la norma para vehículos eléctricos livianos: hasta 1.000 W, 40 km/h y una sola plaza.</p></details>
+<details><summary>¿Necesito matrícula o SOAT?</summary><p>No, si la bicicleta cumple los límites de VELMPU. Por eso verificamos cada modelo.</p></details>
+<details><summary>¿Puedo pagar en cuotas?</summary><p>Sí, con Addi, Sistecrédito, Vanti o Banco de Bogotá. Te guiamos por WhatsApp.</p></details>
+<details><summary>¿Quién hace el mantenimiento?</summary><p>Gestionamos tus citas y garantías con la red de talleres autorizados de la marca.</p></details>
+<details><summary>¿En qué sede puedo ver las bicicletas?</summary><p>En San Andresito de la 38 y en el Centro Comercial Tintal.</p></details>
+</div></section>
+
+<section id="contacto"><div class="w">
+<h2>Cuéntanos qué necesitas</h2>
+<p class="sub">Te respondemos por WhatsApp.</p>
+<form id="f">
+<label>Nombre<input name="n" required autocomplete="name"></label>
+<label>Tu WhatsApp<input name="t" type="tel" required autocomplete="tel"></label>
+<label>Sede de preferencia<select name="s"><option value="sanAndresito">San Andresito de la 38</option><option value="tintal">Tintal</option></select></label>
+<label>Te interesa<select name="i"><option>Evobike</option><option>Mobulaa</option><option>No sé aún</option><option>Solo seguro</option></select></label>
+<label>Forma de pago<select name="p"><option>Addi</option><option>Sistecrédito</option><option>Vanti</option><option>Tarjeta</option><option>Contado</option></select></label>
+<label class="chk"><input type="checkbox" required> Autorizo el tratamiento de mis datos personales (Ley 1581).</label>
+<button class="btn" type="submit">Quiero que me asesoren</button>
+</form>
+</div></section>
+
+<footer><div class="w">
+<div class="grid">
+<div><strong style="color:#fff">MONTE ALTO</strong><br><span style="letter-spacing:.4em;color:var(--li);font-size:.75rem">ELECTRONICS</span><p>Movilidad que te impulsa hacia lo alto.</p></div>
+<div><strong style="color:#fff">San Andresito de la 38</strong><p>Calle 8 #37A-09, Local 138<br>Tel: <span data-ft="sanAndresito"></span></p></div>
+<div><strong style="color:#fff">C.C. Tintal</strong><p>Isla frente a Dollar City<br>Tel: <span data-ft="tintal"></span></p></div>
+<div><strong style="color:#fff">Redes</strong><p><a data-r="instagram" href="#">Instagram</a><br><a data-r="facebook" href="#">Facebook</a><br><a data-r="tiktok" href="#">TikTok</a></p></div>
+</div>
+<p>© 2026 Monte Alto Electronics. Movilidad con propósito.</p>
+</div></footer>
+
+<a class="wa" data-wa="general" href="#" aria-label="Escribir por WhatsApp">WhatsApp</a>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"BicycleStore","name":"Monte Alto Electronics - San Andresito de la 38","address":{"@type":"PostalAddress","streetAddress":"Calle 8 #37A-09, Local 138","addressLocality":"Bogotá","addressCountry":"CO"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:00","closes":"14:00"}]},
+{"@type":"BicycleStore","name":"Monte Alto Electronics - C.C. Tintal","address":{"@type":"PostalAddress","streetAddress":"Isla frente a Dollar City, Centro Comercial Tintal","addressLocality":"Bogotá","addressCountry":"CO"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"19:00"}}]}
+</script>
+
+<script>
+/* ===== CONFIG: EDITA AQUÍ tus números, mapas y redes ===== */
+const CONFIG = {
+  whatsappGeneral: "573247351919",
+  sedes: {
+    sanAndresito: { nombre: "San Andresito de la 38", telefono: "+57 324 735 1919", whatsapp: "573247351919", mapsUrl: "https://maps.google.com/?q=Calle+8+37A-09+Bogota" },
+    tintal:       { nombre: "C.C. Tintal", telefono: "+57 318 050 4275", whatsapp: "573180504275", mapsUrl: "https://maps.google.com/?q=Centro+Comercial+Tintal+Bogota" }
+  },
+  redes: { instagram: "#", facebook: "#", tiktok: "#" },
+  mensajeWhatsapp: "Hola Monte Alto, quiero información sobre bicicletas eléctricas."
+};
+/* Festivos 2026 (formato AAAA-MM-DD). EDITAR si hace falta */
+const FESTIVOS_2026 = ["2026-01-01","2026-01-12","2026-03-23","2026-04-02","2026-04-03","2026-05-01","2026-05-18","2026-06-08","2026-06-15","2026-06-29","2026-07-20","2026-08-07","2026-08-17","2026-10-12","2026-11-02","2026-11-16","2026-12-08","2026-12-25"];
+/* EDITAR: modelos de ejemplo. Reemplaza con los reales del catálogo oficial */
+/* EDITAR: agrega p:"$0.000.000" a cada modelo para mostrar el precio */
+const MODELOS = [
+  {m:"Evobike",n:"Águila Pro",i:"img/Aguila Pro.png",p:"$4.120.000",s:["Ensamble nacional","Repuestos garantizados"]},
+  {m:"Evobike",n:"Águila Pro Baúl",i:"img/Aguila Pro Baul.png",p:"$4.240.000",s:["Ensamble nacional","Incluye baúl"]},
+  {m:"Evobike",n:"Águila Pro Max",i:"img/Aguila Pro MAX.png",p:"$4.200.000",s:["Ensamble nacional","Repuestos garantizados"]},
+  {m:"Mobulaa",n:"Camellito",i:"img/Camellito.png",s:["Ensamble nacional","Repuestos garantizados"]},
+  {m:"Mobulaa",n:"EB-9 Raptor",i:"img/Raptor.png",s:["Ensamble nacional","Repuestos garantizados"]},
+  {m:"Mobulaa",n:"Girl 3",i:"img/Girl 3.png",s:["Ensamble nacional","Repuestos garantizados"]}
+]; /* p = precio "Desde". Agrega v:true solo si confirmas que el modelo cumple VELMPU (muestra la etiqueta) */
+
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+function ph(el){const d=document.createElement('div');d.className='ph';d.textContent='Falta '+(el.getAttribute('src')||'imagen');el.replaceWith(d)}
+function wa(num,msg){return 'https://wa.me/'+num+'?text='+encodeURIComponent(msg||CONFIG.mensajeWhatsapp)}
+function num(k){return k==='general'?CONFIG.whatsappGeneral:CONFIG.sedes[k].whatsapp}
+
+/* catálogo */
+const cat=$('#cat');
+function pintar(f){
+  cat.innerHTML='';
+  MODELOS.filter(x=>f==='todas'||x.m===f).forEach(x=>{
+    const c=document.createElement('article');c.className='card prod';
+    c.innerHTML='<div class="im"><img src="'+encodeURI(x.i)+'" alt="Bicicleta eléctrica '+x.n+'" loading="lazy"></div><div class="b"><span class="pill">'+x.m+'</span>'+(x.v?'<span class="pill b">Cumple VELMPU</span>':'')+'<h3>'+x.n+'</h3><ul>'+x.s.map(t=>'<li>'+t+'</li>').join('')+'</ul><p class="price">'+(x.p?'Desde '+x.p+' · consulta cuotas':'Consulta precio y cuotas')+'</p><a class="btn s" data-wa="general" data-msg="Hola, quiero cotizar la '+x.n+'." href="#">Cotizar por WhatsApp</a></div>';
+    c.querySelector('img').onerror=function(){ph(this)};
+    cat.appendChild(c);
+  });
+  enlazar();
+}
+$$('.f button').forEach(b=>b.onclick=()=>{$$('.f button').forEach(o=>o.setAttribute('aria-pressed',o===b));pintar(b.dataset.f)});
+
+/* enlaces de WhatsApp, teléfonos, mapas y redes */
+function enlazar(){
+  $$('[data-wa]').forEach(a=>a.href=wa(num(a.dataset.wa),a.dataset.msg));
+}
+function datos(){
+  $$('.sede').forEach(s=>{const d=CONFIG.sedes[s.dataset.sede];
+    $('[data-tel]',s).textContent=d.telefono;
+    $('[data-call]',s).href='tel:'+d.telefono.replace(/\s/g,'');
+    $('[data-map]',s).href=d.mapsUrl});
+  $$('[data-ft]').forEach(e=>e.textContent=CONFIG.sedes[e.dataset.ft].telefono);
+  $$('[data-r]').forEach(a=>a.href=CONFIG.redes[a.dataset.r]);
+}
+
+/* abierto ahora (hora de Bogotá) */
+function abierto(k,fecha){
+  const p=new Intl.DateTimeFormat('en-CA',{timeZone:'America/Bogota',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false,weekday:'short'}).formatToParts(fecha).reduce((o,x)=>(o[x.type]=x.value,o),{});
+  const h=(+p.hour%24)*60+ +p.minute, dom=p.weekday==='Sun'||FESTIVOS_2026.includes(p.year+'-'+p.month+'-'+p.day);
+  if(k==='tintal')return h>=600&&h<1140;
+  return dom?(h>=600&&h<840):(h>=540&&h<1140);
+}
+function estado(){$$('.sede').forEach(s=>{const o=abierto(s.dataset.sede,new Date()),e=$('[data-on]',s);e.textContent=o?'Abierto ahora':'Cerrado ahora';e.className='on '+(o?'si':'no')})}
+
+/* formulario -> WhatsApp de la sede elegida */
+$('#f').onsubmit=e=>{e.preventDefault();const f=e.target;
+  const m='Hola Monte Alto, soy '+f.n.value+' (WhatsApp '+f.t.value+'). Me interesa: '+f.i.value+'. Forma de pago: '+f.p.value+'. Prefiero la sede '+CONFIG.sedes[f.s.value].nombre+'.';
+  window.open(wa(CONFIG.sedes[f.s.value].whatsapp,m),'_blank')};
+
+/* menú móvil */
+$('#mb').onclick=function(){const l=$('#links');const o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)};
+$$('#links a').forEach(a=>a.onclick=()=>$('#links').classList.remove('open'));
+
+pintar('todas');datos();estado();setInterval(estado,60000);
+</script>
+</body>
+</html>
